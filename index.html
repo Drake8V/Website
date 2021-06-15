@@ -1,18 +1,153 @@
-<!DOCTYPE html>
-
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/icon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/pushbar.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/style.css">
+	<title>Ñero Store</title>
 </head>
-
 <body>
+	<div class="contenedor">
+		<header>
+			<h1>PegueloÑero</h1>
+			<h2>De ñeros para ñeros</h2>
+		</header>
+		<main>
+			<nav>
+				<button class="btn-menu" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button>
+				<a href="#" class="banner" data-pushbar-target="pushbar-productos">Ropa para ÑERITOS</a>
+            </nav>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+            <!--SLIDER-->
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+            <section class="cd-slider">
+                <ul>
+                  <li data-color="#000004">
+                    <div class="content" style="background-image:url(https://assets.stickpng.com/images/580b57fcd9996e24bc43c325.png)">
+                      <blockquote>
+                        <p>Que asco de fuente.</p>
+                        <span>El chuek </span>
+                      </blockquote>
+                    </div>
+                  </li>
+                  <li data-color="#000000">
+                    <div class="content" style="background-image:url(https://www.pngkey.com/png/full/276-2767518_resultado-de-imagen-de-burro-png-ne-de.png)">
+                      <blockquote>
+                        <p>Necesito que me apapachen.</p>
+                        <span>El burro :v</span>
+                      </blockquote>
+                    </div>
+                  </li>
+                  <li data-color="#000000">
+                    <div class="content" style="background-image:url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/89f9adda-0ce2-41ca-bd0a-629c69bba8e5/dapuv77-136f3b3e-66ea-4d43-9bbd-e38008c80c4f.png/v1/fill/w_1024,h_1191,strp/deadpool_png__3_by_anna_x_anarchy_dapuv77-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMTkxIiwicGF0aCI6IlwvZlwvODlmOWFkZGEtMGNlMi00MWNhLWJkMGEtNjI5YzY5YmJhOGU1XC9kYXB1djc3LTEzNmYzYjNlLTY2ZWEtNGQ0My05YmJkLWUzODAwOGM4MGM0Zi5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.BiRn7SyNFJkkS4i8V8-fz8P0YqoC1zKWjbF5dsbMVJM)">
+                      <blockquote>
+                        <p>Darkside</p>
+                        <span>Antonio Banderas </span>
+                      </blockquote>
+                    </div>
+                  </li>
+                </ul>
+                <nav>
+                  <div><a class="prev" href="#"></a></div>
+                  <div><a class="next" href="#"></a></div>
+                </nav>
+              </section>
+            
+            <!--Tarjetas de productos-->
 
+			<section class="productos">
+				<figure>
+					<img src="https://cdn.koaj.co/51658-thickbox_default/buzo-unicolor-basico.jpg" alt="">
+					<figcaption>
+						<a href="#" data-pushbar-target="pushbar-carrito">
+							<span>$1800</span>
+							<span>Comprar</span>
+						</a>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="https://cdn.koaj.co/42849-thickbox_default/camiseta-mickey-mouse-cuello-en-contraste.jpg" alt="">
+					<figcaption>
+						<a href="#" data-pushbar-target="pushbar-carrito">
+							<span>$1800</span>
+							<span>Comprar</span>
+						</a>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="https://cdn.koaj.co/51663-thickbox_default/buzo-unicolor-bordado.jpg" alt="">
+					<figcaption>
+						<a href="#" data-pushbar-target="pushbar-carrito">
+							<span>$1800</span>
+							<span>Comprar</span>
+						</a>
+					</figcaption>
+				</figure>
+			</section>
+		</main>
+
+		<!-- Pushbars: Menu -->
+        
+        <div data-pushbar-id="pushbar-menu" data-pushbar-direction="left" class="pushbar pushbar-menu">
+            <div class="btn-cerrar derecha">
+                <button data-pushbar-close><i class="fas fa-times"></i></button>
+            </div>
+            <nav class="menu">
+                <a href="">Inicio</a>
+                <a href="html/shirt.html">Camisetas</a>
+                <a href="">Techos</a>
+                <a href="">Pisos</a>
+            </nav>
+        </div>
+		
+		<!-- Pushbars: Carrito de Compras -->
+		
+    <div data-pushbar-id="pushbar-carrito" data-pushbar-direction="right" class="pushbar pushbar-carrito">
+      <div class="btn-cerrar izquierda">
+        <button data-pushbar-close>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <p class="titulo">CARRITO DE COMPRAS</p>
+
+      <div class="item">
+        <img src="img/Thumb1.png" alt="imagen de compra">
+        <div class="textos">
+          <p Class="nombre-item">Tissot Watch</p>
+          <p>$2500</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/Thumb2.png" alt="imagen de compra">
+        <div class="textos">
+          <p Class="nombre-item">Ipsum Watch</p>
+          <p>$1200</p>
+        </div>
+      </div>
+      <div class="total">
+        <p class="precio-total">Total:</p>
+        <p>$3700</p>
+      </div>
+    </div>
+
+		<!-- Pushbars: Productos -->
+		
+
+		<!-- Pushbars: Newsletter -->
+		
+	</div>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="js/pushbar.js"></script>
+    <script src="js/slider.js"></script>
+    <script type="text/javascript">
+        var pushbar = new Pushbar({
+            blur: true,
+            overlay: true
+        });
+    </script>
 </body>
 </html>
