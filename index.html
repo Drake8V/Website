@@ -1,18 +1,136 @@
-<!DOCTYPE html>
-
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/icon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/pushbar.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!----- fuente  ------>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap" rel="stylesheet">
+	  <title> SÚBITA </title>
 </head>
 
 <body>
+  
+	<div class="contenedor">
+		<header>
+			<h1><u>SÚBITA </u>
+			<h2>Moda y Accesorios</h2>
+		</header>
+		
+    <main>
+      
+			<nav>
+				<button class="btn-menu" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button>
+				<a href="#" class="banner" >Frase inspiradora W,F,I</a>
+            </nav>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+            <!--SLIDER-->
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+            <section class="cd-slider">
+                <ul>
+                  <li data-color ="rgba(1,1,1,0.514)">
+                    <div class="content" style="background-image:url(img/buzo.png)">
+                      <blockquote>
+                        <p>Busos de 305g</p>
+                        <span>La mejor calidad</span>
+                      </blockquote>
+                    </div>
+                  </li>
+                  <li data-color="rgba(1,1,1,0.514)">
+                    <div class="content" style="background-image:url(img/blazer.png)">
+                      <blockquote>
+                        <p>Camisas a rayas</p>
+                        <span>Todas las tallas</span>
+                      </blockquote>
+                    </div>
+                  </li>
+                  <li data-color="rgba(1,1,1,0.514)">
+                    <div class="content" style="background-image:url(img/chaqueta.png)">
+                      <blockquote>
+                        <p>Busos de la mejor calidad</p>
+                        <span>Disponible en varios colores</span>
+                      </blockquote>
+                    </div>
+                  </li>
+                </ul>
+                <nav>
+                  <div><a class="prev" href="#"></a></div>
+                  <div><a class="next" href="#"></a></div>
+                </nav>
+              </section>
+            
+            <!--Tarjetas de productos-->
 
+			<section class="productos">
+				<figure>
+					<img src="https://cdn.koaj.co/51658-thickbox_default/buzo-unicolor-basico.jpg" alt="">
+					<figcaption>
+						<a href="#" data-pushbar-target="pushbar-carrito">
+							<span>$1800</span>
+							<span>Comprar</span>
+						</a>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="https://cdn.koaj.co/42849-thickbox_default/camiseta-mickey-mouse-cuello-en-contraste.jpg" alt="">
+					<figcaption>
+						<a href="#" data-pushbar-target="pushbar-carrito">
+							<span>$1800</span>
+							<span>Comprar</span>
+						</a>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="https://cdn.koaj.co/51663-thickbox_default/buzo-unicolor-bordado.jpg" alt="">
+					<figcaption>
+						<a href="#" data-pushbar-target="pushbar-carrito">
+							<span>$1800</span>
+							<span>Comprar</span>
+						</a>
+					</figcaption>
+				</figure>
+			</section>
+		</main>
+
+ <!-- Boton flotante --> 
+
+      <div class="floating-button">
+        <a href="https://api.whatsapp.com/send?phone=573502440536" target="_Blank"><img src="/img/wa-icon.png" alt="icon-whatsapp"></a>
+      </div>
+
+		<!-- Pushbars: Menu -->
+        
+        <div data-pushbar-id="pushbar-menu" data-pushbar-direction="left" class="pushbar pushbar-menu">
+            <div class="btn-cerrar derecha">
+                <button data-pushbar-close><i class="fas fa-times"></i></button>
+            </div>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="html/shirt.html">Camisetas</a>
+                <a href="html/sweater.html">Sweaters</a>
+                <a href="html/accessories.html">Accesorios</a>
+            </nav>
+        </div>
+	</div>
+
+  <footer>
+    <iframe src="html/footer.html" id="footer-frame"></iframe>
+  </footer>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="js/pushbar.js"></script>
+    <script src="js/slider.js"></script>
+    <script type="text/javascript">
+        var pushbar = new Pushbar({
+            blur: true,
+            overlay: true
+        });
+    </script>
+    
 </body>
 </html>

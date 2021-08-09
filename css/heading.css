@@ -1,0 +1,171 @@
+a {
+	text-decoration: none;
+}
+
+figure img{
+	box-shadow: 0 0 15px rgba(1,1,1,.5);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* ----- ----- HEADER ----- ----- */
+header {
+	width: 100%;
+	text-align: center;
+	padding: 40px 0;
+  
+}
+
+u {
+    text-decoration: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  
+header h1 {
+	font-weight: normal;
+  color: white;
+	font-size: 50px;
+	line-height: 40px;
+	margin-bottom: 10px;
+}
+
+header h2 {
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 24px;
+	color: #b8b8b8;
+}
+
+/* ----- ----- MAIN ----- ----- */
+main {
+	width: 100%;
+}
+
+main #poster{
+	width: 100%;
+	display: flex;
+  /*PROPIEDAD DE ESPACIO ENTRE MENU Y SLIDER*/
+	margin-bottom: 20px;
+}
+
+main nav .btn-menu {
+  border-radius: 5px;
+	display: inline-block;
+	width: 65px;
+	height: 65px;
+	border: 2px solid rgba(255, 255, 255, 0.582);
+	background: transparent;
+	cursor: pointer;
+	font-size: 28px;
+  color: white;
+	margin-right: 5px;
+	transition: .3s ease all;
+  outline: 0;
+}
+
+main nav .btn-menu:hover {
+	border: 2px solid #333131;
+	color: #828282;
+}
+
+main nav .banner {
+  border-radius: 5px;
+	display: inline-block;
+	width: 100%;
+	background-color:rgba(1, 1, 1, 0.514);
+	background-size: cover;
+	text-align: center;
+	height: 65px;
+	line-height: 65px;
+	font-size: 26px;
+	font-weight: 300;
+	color: #fff;
+}
+
+/*--------------------------- */
+/*-----WhatsApp Button------- */
+/*--------------------------- */
+.floating-button{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: block;
+  border-radius: 50px;
+}.floating-button a img{
+  width: 45px;
+  height: 45px;
+}.floating-button a img:hover{
+  width: 50px;
+  height: 50px;
+}
+
+/* ------------------------- */
+/* Pushbars: Estilos Generales */
+/* ------------------------- */
+
+.pushbar{
+	background-color: #000;
+	color: white;
+	padding: 20px;
+}
+
+.pushbar .btn-cerrar.derecha{
+	text-align: right;
+  
+}
+
+.pushbar .btn-cerrar.izquierda{
+	text-align: left;
+}
+
+.pushbar .btn-cerrar button{
+	background: none;
+	color: #808080;
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+/* ----- ----- Pushbar: Menu de Navegacion ----- ----- */
+
+.menu a{
+	display: block;
+	color: #AAAAAA;
+	padding: 20px 0;
+	border-bottom: 1px solid rgba(112,112,112, .60);
+	font-weight: 300;
+	font-size: 18px;
+	transition: .3s ease color;
+}
+
+.menu a:hover{
+	color: white;
+}
+
+/* ------------------------- */
+/* MEDIA QUERIES */
+/* ------------------------- */
+@media screen and (max-width: 600px) {
+	header h1 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	header h2 {
+		font-size: 16px;
+		line-height: 16px;
+	}
+
+	main nav .banner {
+		font-size: 14px;
+	}
+
+	main .productos {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	main .productos figure {
+		margin-bottom: 40px;
+	}
+}
