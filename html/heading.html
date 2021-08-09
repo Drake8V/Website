@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet"> 
+  <link rel="stylesheet" href="../css/pushbar.css">
+  <link rel="stylesheet" href="../css/heading.css">
+  <title>Document</title>
+
+      <!----- fuente  ------>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+  <header>
+		<h1><u>SÚBITA </u>
+		<h2>Moda y Accesorios</h2>
+	</header>
+		 
+  <main>
+		<nav id="poster">
+			<button class="btn-menu" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button>
+			<a href="#" class="banner">Frase inspiradora W,F,I</a>
+    </nav>
+  </main>
+
+    <!-- Boton flotante --> 
+
+    <div class="floating-button">
+      <a href="https://api.whatsapp.com/send?phone=573502440536" target="_Blank"><img src="/img/wa-icon.png" alt="icon-whatsapp"></a>
+    </div>
+
+    <!-- Pushbars: Menu -->
+    
+    <div data-pushbar-id="pushbar-menu" data-pushbar-direction="left" class="pushbar pushbar-menu">
+      <div class="btn-cerrar derecha">
+        <button data-pushbar-close><i class="fas fa-times"></i>
+        </button>
+      </div>
+      <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="html/shirt.html">Camisetas</a>
+        <a href="html/sweater.html">Sweaters</a>
+        <a href="html/accessories.html">Accesorios</a>
+      </nav>
+    </div>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="../js/pushbar.js"></script>
+    <script type="text/javascript">
+        var pushbar = new Pushbar({
+            blur: true,
+            overlay: true
+        });
+    </script>
+</body>
+</html>
