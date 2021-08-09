@@ -77,7 +77,7 @@
 
     var size =
         cdSlider.clientWidth >= cdSlider.clientHeight
-          ? cdSlider.clientWidth * 2
+          ? cdSlider.clientWidth * 4
           : cdSlider.clientHeight * 2,
       ripple = nav.children[1].querySelector("span");
 

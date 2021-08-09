@@ -7,47 +7,53 @@
     <link rel="stylesheet" href="css/pushbar.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/style.css">
-	<title>Ñero Store</title>
+
+    <!----- fuente  ------>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap" rel="stylesheet">
+	  <title> SÚBITA </title>
 </head>
 
 <body>
+  
 	<div class="contenedor">
 		<header>
-			<h1>PegueloÑero</h1>
-			<h2>Anita lava a tina :v</h2>
+			<h1><u>SÚBITA </u>
+			<h2>Moda y Accesorios</h2>
 		</header>
 		
     <main>
+      
 			<nav>
 				<button class="btn-menu" data-pushbar-target="pushbar-menu"><i class="fas fa-bars"></i></button>
-				<a href="#" class="banner" data-pushbar-target="pushbar-productos">Ropa para ÑERITOS</a>
+				<a href="#" class="banner" >Frase inspiradora W,F,I</a>
             </nav>
 
             <!--SLIDER-->
 
             <section class="cd-slider">
                 <ul>
-                  <li data-color="#000004">
-                    <div class="content" style="background-image:url(https://assets.stickpng.com/images/580b57fcd9996e24bc43c325.png)">
+                  <li data-color ="rgba(1,1,1,0.514)">
+                    <div class="content" style="background-image:url(img/buzo.png)">
                       <blockquote>
-                        <p>Que asco de fuente.</p>
-                        <span>El chuek </span>
+                        <p>Busos de 305g</p>
+                        <span>La mejor calidad</span>
                       </blockquote>
                     </div>
                   </li>
-                  <li data-color="#000000">
-                    <div class="content" style="background-image:url(https://www.pngkey.com/png/full/276-2767518_resultado-de-imagen-de-burro-png-ne-de.png)">
+                  <li data-color="rgba(1,1,1,0.514)">
+                    <div class="content" style="background-image:url(img/blazer.png)">
                       <blockquote>
-                        <p>Necesito que me apapachen.</p>
-                        <span>El burro :v</span>
+                        <p>Camisas a rayas</p>
+                        <span>Todas las tallas</span>
                       </blockquote>
                     </div>
                   </li>
-                  <li data-color="#000000">
-                    <div class="content" style="background-image:url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/89f9adda-0ce2-41ca-bd0a-629c69bba8e5/dapuv77-136f3b3e-66ea-4d43-9bbd-e38008c80c4f.png/v1/fill/w_1024,h_1191,strp/deadpool_png__3_by_anna_x_anarchy_dapuv77-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xMTkxIiwicGF0aCI6IlwvZlwvODlmOWFkZGEtMGNlMi00MWNhLWJkMGEtNjI5YzY5YmJhOGU1XC9kYXB1djc3LTEzNmYzYjNlLTY2ZWEtNGQ0My05YmJkLWUzODAwOGM4MGM0Zi5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.BiRn7SyNFJkkS4i8V8-fz8P0YqoC1zKWjbF5dsbMVJM)">
+                  <li data-color="rgba(1,1,1,0.514)">
+                    <div class="content" style="background-image:url(img/chaqueta.png)">
                       <blockquote>
-                        <p>Darkside</p>
-                        <span>Antonio Banderas </span>
+                        <p>Busos de la mejor calidad</p>
+                        <span>Disponible en varios colores</span>
                       </blockquote>
                     </div>
                   </li>
@@ -91,6 +97,12 @@
 			</section>
 		</main>
 
+ <!-- Boton flotante --> 
+
+      <div class="floating-button">
+        <a href="https://api.whatsapp.com/send?phone=573502440536" target="_Blank"><img src="/img/wa-icon.png" alt="icon-whatsapp"></a>
+      </div>
+
 		<!-- Pushbars: Menu -->
         
         <div data-pushbar-id="pushbar-menu" data-pushbar-direction="left" class="pushbar pushbar-menu">
@@ -98,50 +110,18 @@
                 <button data-pushbar-close><i class="fas fa-times"></i></button>
             </div>
             <nav class="menu">
-                <a href="">Inicio</a>
+                <a href="index.html">Inicio</a>
                 <a href="html/shirt.html">Camisetas</a>
-                <a href="">Techos</a>
-                <a href="">Pisos</a>
+                <a href="html/sweater.html">Sweaters</a>
+                <a href="html/accessories.html">Accesorios</a>
             </nav>
         </div>
-		
-		<!-- Pushbars: Carrito de Compras -->
-		
-    <div data-pushbar-id="pushbar-carrito" data-pushbar-direction="right" class="pushbar pushbar-carrito">
-      <div class="btn-cerrar izquierda">
-        <button data-pushbar-close>
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-
-      <p class="titulo">CARRITO DE COMPRAS</p>
-
-      <div class="item">
-        <img src="img/Thumb1.png" alt="imagen de compra">
-        <div class="textos">
-          <p Class="nombre-item">Tissot Watch</p>
-          <p>$2500</p>
-        </div>
-      </div>
-      <div class="item">
-        <img src="img/Thumb2.png" alt="imagen de compra">
-        <div class="textos">
-          <p Class="nombre-item">Ipsum Watch</p>
-          <p>$1200</p>
-        </div>
-      </div>
-      <div class="total">
-        <p class="precio-total">Total:</p>
-        <p>$3700</p>
-      </div>
-    </div>
-
-		<!-- Pushbars: Productos -->
-		
-
-		<!-- Pushbars: Newsletter -->
-		
 	</div>
+
+  <footer>
+    <iframe src="html/footer.html" id="footer-frame"></iframe>
+  </footer>
+
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="js/pushbar.js"></script>
     <script src="js/slider.js"></script>
@@ -151,5 +131,6 @@
             overlay: true
         });
     </script>
+    
 </body>
 </html>

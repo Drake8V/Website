@@ -1,19 +1,3 @@
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Cormorant Infant', serif;
-}
-
-body{
-  background-image: url("../img/web-back.jpg");
-  background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        -o-background-size: cover;
-  background-attachment: fixed;
-}
-
 a {
 	text-decoration: none;
 }
@@ -24,14 +8,6 @@ figure img{
   border-top-right-radius: 10px;
 }
 
-.contenedor {
-	width: 100%;
-	max-width: 1000px;
-	margin: auto;
-	padding-bottom: 120px;
-}
-
- 
 /* ----- ----- HEADER ----- ----- */
 header {
 	width: 100%;
@@ -65,7 +41,7 @@ main {
 	width: 100%;
 }
 
-main nav {
+main #poster{
 	width: 100%;
 	display: flex;
   /*PROPIEDAD DE ESPACIO ENTRE MENU Y SLIDER*/
@@ -104,39 +80,6 @@ main nav .banner {
 	font-size: 26px;
 	font-weight: 300;
 	color: #fff;
-}
-
-/*--------------------------- */
-/*-----   Productos   ------- */
-/*--------------------------- */
-
-main .productos {
-	display: flex;
-	justify-content: space-between;
-}
-
-main .productos figure {
-	max-width: 320px;	
-  margin: 4px;
-}
-
-main .productos img {
-	vertical-align: top;
-	width: 100%;
-  height: auto;  
-}
-
-main .productos figure figcaption a {
-  
-	background: rgba(0, 0, 0, 0.651);
-	display: inline-block;
-	width: 100%;
-	justify-content: space-between;
-	color: #fff;
-	height: 60px;
-	line-height: 60px;
-	padding: 0 10px;
-	font-weight: 300;
 }
 
 /*--------------------------- */
@@ -197,15 +140,6 @@ main .productos figure figcaption a {
 
 .menu a:hover{
 	color: white;
-}
-
-/*--------------------------- */
-/*-----     Footer    ------- */
-/*--------------------------- */
-
-#footer-frame{
-  width: 100%;
-  border-style: none;
 }
 
 /* ------------------------- */
